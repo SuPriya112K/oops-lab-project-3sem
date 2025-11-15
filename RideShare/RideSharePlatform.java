@@ -19,6 +19,19 @@ public class RideSharePlatform {
         this.rideHistory = new ArrayList<>();
     }
 
+    // Getters to allow UI/CLI to inspect current state
+    public List<Vehicle> getVehicles() {
+        return vehicles;
+    }
+
+    public List<Passenger> getPassengers() {
+        return passengers;
+    }
+
+    public List<Ride> getRideHistory() {
+        return rideHistory;
+    }
+
     // Methods to add vehicles and passengers to the platform
     public void addVehicle(Vehicle vehicle) {
         this.vehicles.add(vehicle);
